@@ -8,10 +8,10 @@ public class SumOfDivisors {
         System.out.println("Suma dzielników liczby " + number + " to " + sumOfDivisors);
     }
 
-    private static int calculateSumOfDivisors(int number) {
+    private static int calculateSumOfDivisors(int n) {
         int sum = 0;
-        for ( int i = 1 ; i <= number ; i ++) {
-            if (number%i == 0) sum = i + sum;
+        for ( int i = 1 ; i <= n ; i ++) {
+            if (n%i == 0) sum = i + sum;
         }
         return sum;
     }
